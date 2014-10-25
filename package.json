@@ -1,0 +1,25 @@
+{
+  "name": "tcp2tcp",
+  "version": "0.0.1",
+  "description": "A tcp to tcp proxy server. Used for debugging purposes via the command line.",
+  "main": "index.js",
+  "bin": {
+    "tcp2tcp": "./index.js"
+  },  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herenow/tcp2tcp"
+  },
+  "keywords": [
+    "tcp proxy",
+    "tcp2tcp"
+  ],
+  "author": "herenow",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "^0.6.1"
+  }
+}
