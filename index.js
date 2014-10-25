@@ -15,9 +15,9 @@ argv.options('t', {
 	alias: 'to',
 	describe: 'Proxy traffic to address (pass data to this address).',
 })
-argv.options('l', {
-	alias: 'latency',
-	describe: 'Simulate network latency in ms.',
+argv.options('d', {
+	alias: 'delay',
+	describe: 'Adds a delay in ms, before sending packets to the backend.',
 })
 argv.options('p', {
 	alias: 'print',
@@ -113,7 +113,7 @@ function proxy(fromSocket, toSocket) {
 		}
 
 		if(_print) {
-			console.error(buf
+			console.error(buf)
 		}
 	})
 
